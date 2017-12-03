@@ -1,0 +1,52 @@
+@import 'styleguide';
+@import 'mixins';
+@import 'settings';
+html {
+    background: url(/content/img/background-img-2@3x.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+}
+
+.page-wrapper {
+    max-width: 700px;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    padding: 0 20px 0;
+}
+
+.logo {
+	width: 182px;
+	height: 336px;
+    object-fit: contain;
+    top: 0;
+    left: 20%;
+    padding-bottom: 100px;
+
+    @include breakpoint($large-up) {
+        padding-bottom: 210px;        
+    }
+}
+
+#landing-page {
+    h1 {
+        margin: 0;
+        @include breakpoint($small-down) {
+            font-size: 50px;
+        }
+    }
+
+    h2 {
+        margin: 0;        
+    }
+    
+    p{
+        margin: 5px 0;        
+    }
+}
