@@ -39,15 +39,16 @@ a {
   text-decoration: none;
   color: #e2ac61; }
 
-html {
-  background: url(/content/img/background-img-2@3x.jpg) no-repeat center center fixed;
+body {
+  margin: 0;
+  background: url(/content/img/background-img-2.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
-
-body {
-  margin: 0; }
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: #464646; }
 
 .page-wrapper {
   max-width: 700px;
@@ -62,7 +63,7 @@ body {
   object-fit: contain;
   top: 0;
   left: 20%;
-  padding-bottom: 90px; }
+  padding-bottom: 80px; }
   @media only screen and (min-width: 62.5em) {
     .logo {
       padding-bottom: 210px; } }
